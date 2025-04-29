@@ -1,0 +1,45 @@
+esbmc --help
+esbmc --version
+esbmc -I <path>
+esbmc -D<macro>
+esbmc --old-frontend
+esbmc --unwind <n>
+esbmc --no-unwinding-assertions
+esbmc --context-bound <n>
+esbmc --k-induction
+esbmc --k-step <n>
+esbmc --interval-analysis
+esbmc --add-symex-value-sets
+esbmc --unlimited-k-steps
+esbmc --falsification
+esbmc --bounds-check
+esbmc --overflow-check
+esbmc --div-by-zero-check
+esbmc --floatbv
+esbmc --memory-leak-check
+esbmc --pointer-check
+esbmc --deadlock-check
+esbmc --data-races-check
+esbmc --atomicity-check
+esbmc --lock-order-check
+esbmc --boolector
+esbmc --z3
+esbmc --mathsat
+esbmc --cvc
+esbmc --yices
+esbmc --bitwuzla
+esbmc --smtlib --smtlib-solver-prog "<CMD>"
+esbmc --default-solver <solver>
+esbmc --witness-output <file>
+esbmc --show-goto-functions
+esbmc --show-symex
+esbmc --show-vcc
+esbmc --output-goto <file>
+esbmc --file-output <file>
+esbmc --generate-html-output <dir>
+esbmc --memlimit <size>
+esbmc --timeout <time>
+esbmc --force-malloc-success
+esbmc --config-file <path>
+# Example usage:
+esbmc --unwind 5 --memory-leak-check --threads my_test.c
